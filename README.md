@@ -4,12 +4,12 @@ This is a project about understanding different sorting algorithms and how they 
 ### About the project
 General
 ```
- :page_with_curl: The header file for the project is sort.h wil be required to compile locally
+ 📄 The header file for the project is sort.h wil be required to compile locally
 ```
 Each task contains the following
 ```
- :page_with_curl: The C code containing the algorithm, the naming is (task number)-[Algorithm Name].c
- :page_with_curl: Thebig O notation for the time complexity for that algorithm, the naming is (task number)-O
+ 📄 The C code containing the algorithm, the naming is (task number)-[Algorithm Name].c
+ 📄 Thebig O notation for the time complexity for that algorithm, the naming is (task number)-O
 ```
 
 ## :computer: Technical
