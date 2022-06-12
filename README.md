@@ -1,5 +1,5 @@
 # Sorting Algorithms and Big O notation
-## By [Farah M](https://github.com/farahmc) and Matthew Brinkmann
+## By [Farah Mccurdy](https://github.com/farahmc) and Matthew Brinkmann
 This is a project about understanding different sorting algorithms and how they can be explained with big 'O' notation.
 ### About the project
 General
