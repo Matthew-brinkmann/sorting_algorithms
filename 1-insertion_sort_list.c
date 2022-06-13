@@ -1,7 +1,7 @@
 #include "sort.h"
 
 /**
-* swap_nodes - Swaps two nodes
+* swap_nodes_and_print - Swaps two nodes
 * @node1: first node to swap
 * @node2: second node to swap
 * @head: Head of list
@@ -27,6 +27,12 @@ void swap_nodes_and_print(listint_t *node1, listint_t *node2, listint_t **head)
 	print_list(*head);
 }
 
+/**
+* insertion_sort_list - sort a list using insertion method
+* @list: the list to sort
+*
+* return: void
+*/
 void insertion_sort_list(listint_t **list)
 {
 	listint_t *curr, *next, *prev, *hold;
