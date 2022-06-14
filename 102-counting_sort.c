@@ -1,6 +1,5 @@
 #include <stdlib.h>
 #include "sort.h"
-#include <stdio.h>
 
 /**
  * find_max_val_in_array - finds the maximum value in an array
@@ -31,7 +30,7 @@ void counting_sort(int *array, size_t size)
 {
 	int maxValue = 0, *count, *output, i;
 
-	if (array == NULL)
+	if (array == NULL || size < 2)
 		return;
 
 	maxValue = find_max_val_in_array(array, size);
