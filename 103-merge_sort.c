@@ -2,6 +2,16 @@
 #include <stdio.h>
 #include "sort.h"
 
+/**
+ * merge - merging the arrays
+ * @array: the array to merge
+ * @left: leftmost value of array
+ * @right: rightmost value of array
+ * @middle: middle value of array
+ *
+ * Return: void, no return
+ */
+
 void merge(int *array, size_t left, size_t middle, size_t right)
 {
 	int idx_left, idx_right, idx_merge;
@@ -53,6 +63,15 @@ void merge(int *array, size_t left, size_t middle, size_t right)
 	}
 }
 
+/**
+ * merge_sort_recursive - sorting the arrays
+ * @array: the array to merge
+ * @left: leftmost value of array
+ * @right: rightmost value of array
+ *
+ * Return: void, no return
+ */
+
 void merge_sort_recursive(int *array, size_t left, size_t right)
 {
 	size_t middle;
@@ -66,6 +85,15 @@ void merge_sort_recursive(int *array, size_t left, size_t right)
 		merge(array, left, middle, right);
 	}
 }
+
+/**
+ * merge_sort - sort an array of integers in ascending order using the merge
+ * sort algorithm, using the top-down merge sort algorith
+ * @array: the array to sort
+ * @size: size of the array
+ *
+ * Return: void, no return
+ */
 
 void merge_sort(int *array, size_t size)
 {
