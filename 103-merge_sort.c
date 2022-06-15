@@ -35,15 +35,9 @@ void merge(int *array, size_t left, size_t middle, size_t right)
 	while (idx_left < left_arr_size && idx_right < right_arr_size)
 	{
 		if (left_array[idx_left] <= right_array[idx_right])
-		{
-			array[idx_merge] = left_array[idx_left];
-			idx_left++;
-		}
+			array[idx_merge] = left_array[idx_left], idx_left++;
 		else
-		{
-			array[idx_merge] = right_array[idx_right];
-			idx_right++;
-		}
+			array[idx_merge] = right_array[idx_right], idx_right++;
 		idx_merge++;
 	}
 
@@ -51,7 +45,6 @@ void merge(int *array, size_t left, size_t middle, size_t right)
 		array[idx_merge] = left_array[idx_left];
 	for (; idx_right < right_arr_size; idx_right++, idx_merge++)
 		array[idx_merge] = right_array[idx_right];
-
 	printf("[Done]: ");
 	for (idx_left = left; idx_left <= (int)right; idx_left++)
 	{
